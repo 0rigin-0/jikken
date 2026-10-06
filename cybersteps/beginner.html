@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173B63" />
+    <meta name="description" content="Linux、コマンド、使用ツール、セキュリティ職種を初心者向けに紹介します。" />
+    <meta name="keywords" content="サイバーセキュリティ, CTF, 初心者, 学習, Base64, ネットワーク, フォレンジック" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="見て、知って、解いてみる。｜はじめてのサイバーセキュリティCTF" />
+    <meta property="og:description" content="サイバーセキュリティを、知っているから解けるへ。まずは、いちばんやさしい1問から。" />
+    <meta property="og:site_name" content="見て、知って、解いてみる。" />
+    <meta property="og:image" content="/manus-storage/async-images/i923SkjwkHOPoc8VTd2bsa/image-1.webp" />
+    <meta property="og:image:alt" content="見て、知って、解いてみる。サイバーセキュリティ初心者向けCTF学習サイト" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="見て、知って、解いてみる。" />
+    <meta name="twitter:description" content="まずは、いちばんやさしい1問から。" />
+    <meta name="twitter:image" content="/manus-storage/async-images/i923SkjwkHOPoc8VTd2bsa/image-1.webp" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/main.css?v=all-pages-layout-20261006" />
+    <title>はじめてのCTF｜見て、知って、解いてみる。</title>
+  </head>
+  <body>
+<header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="見て、知って、解いてみる。ホーム">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 3 27 7v8c0 7.1-4.6 11.7-11 14-6.4-2.3-11-6.9-11-14V7l11-4Z" stroke="currentColor" stroke-width="2"/><path d="m10.5 15.7 3.4 3.4 7.6-7.7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-copy"><strong>SECURE STEPS</strong><small>見て、知って、解いてみる。</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="メインナビゲーション">
+          <a href="/">HOME</a>
+          <a href="/satcon.html">サイコンについて</a>
+          <a href="/ctf.html">CTFを知る</a>
+          <a href="/beginner.html">はじめてのCTF</a>
+          <a href="/challenge.html">問題に挑戦</a>
+
+        </nav>
+        <a class="button button-primary header-cta application-cta" href="/satcon.html">申し込みはこちら</a>
+        <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="モバイルメニュー" hidden>
+        <a href="/">HOME</a>
+        <a href="/satcon.html">サイコンについて</a>
+        <a href="/ctf.html">CTFを知る</a>
+        <a href="/beginner.html">はじめてのCTF</a>
+        <a href="/challenge.html">問題に挑戦</a>
+        <a class="button button-primary" href="/satcon.html">申し込みはこちら</a>
+      </nav>
+    </header>
+<main id="main-content">
+  <section class="page-hero section-shell beginner-hero">
+    <div class="page-hero-copy">
+      <p class="eyebrow">FIRST GUIDE / TOOLBOX</p>
+      <h1><span class="hero-line">はじめてのCTF</span><span class="hero-line"><em>使用ツール・サイトを<br />味方に。</em></span></h1>
+      <p>CTFでは、問題に合わせてツールを選び、調べ、試してFlagを探します。最初から全部覚えなくて大丈夫。よく使う道具とLinuxの基本から始めましょう。</p>
+      <div class="guide-hero-links"><a class="button button-primary" href="#toolbox">使用ツール・サイト集を見る <span aria-hidden="true">↓</span></a><a class="button button-outline" href="#linux">Linuxを知る <span aria-hidden="true">↓</span></a></div>
+    </div>
+    <div class="page-hero-mark page-hero-terminal beginner-hero-terminal"><span>$ start_ctf<br />tools --list<br />learn --step 01</span><b>まずは安全な<br />練習環境から。</b></div>
+  </section>
+
+  <section class="guide-note section-shell" aria-label="安全に学ぶための注意">
+    <span class="guide-note-icon" aria-hidden="true">✓</span><div><strong>安全に学ぶために</strong><p>ツールは、自分で用意した環境やCTF主催者が許可した対象だけに使いましょう。実在するサービスへの無断アクセスやログイン試行はしません。</p></div>
+  </section>
+
+  <section class="toolbox-section section-shell" id="toolbox">
+    <div class="section-heading split-heading"><div><p class="eyebrow">常設CTF / TOOLBOX</p><h2>問題に合わせて選ぶ、<br /><em>使用ツール・サイト集。</em></h2></div><p>代表的なツールとサイトをカテゴリ別にまとめました。まずは気になるものを1つ開いて、触ってみるところから。</p></div>
+    <div class="tool-category-grid">
+      <article class="tool-category tool-category-wide"><div class="tool-category-top"><span class="tool-category-number">01</span><h3>まず使う道具</h3><span class="tool-category-label">START HERE</span></div><div class="tool-list"><a href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener noreferrer"><b>CyberChef</b><span>Base64、Hex、URLエンコード、XORなどを変換・解読する“暗号の万能ナイフ”。</span><i>公式サイト ↗</i></a><a href="https://www.wireshark.org/" target="_blank" rel="noopener noreferrer"><b>Wireshark</b><span>pcap / pcapngを開き、ネットワーク通信や流出ファイルの手がかりを探す。</span><i>公式サイト ↗</i></a><a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><b>Python</b><span>文字列の処理や繰り返し作業を、小さなプログラムで自動化する。</span><i>公式サイト ↗</i></a><a href="https://www.kali.org/" target="_blank" rel="noopener noreferrer"><b>Kali Linux</b><span>Nmap、Wireshark、Burp Suiteなど、セキュリティ学習向けのツールがそろったLinux。</span><i>公式サイト ↗</i></a></div></article>
+      <article class="tool-category"><div class="tool-category-top"><span class="tool-category-number">02</span><h3>Web</h3><span class="tool-category-label">INSPECT</span></div><div class="tool-list"><a href="https://portswigger.net/burp" target="_blank" rel="noopener noreferrer"><b>Burp Suite</b><span>Webサイトとサーバーの通信を確認する。</span><i>公式サイト ↗</i></a><a href="https://www.zaproxy.org/" target="_blank" rel="noopener noreferrer"><b>OWASP ZAP</b><span>Webセキュリティを学ぶための診断ツール。</span><i>公式サイト ↗</i></a><a href="https://www.postman.com/" target="_blank" rel="noopener noreferrer"><b>Postman</b><span>Web APIのリクエストをGUIで確認する。</span><i>公式サイト ↗</i></a></div></article>
+      <article class="tool-category"><div class="tool-category-top"><span class="tool-category-number">03</span><h3>Crypto</h3><span class="tool-category-label">DECODE</span></div><div class="tool-list"><a href="https://www.dcode.fr/" target="_blank" rel="noopener noreferrer"><b>dCode</b><span>暗号や文字列の候補を調べる。</span><i>公式サイト ↗</i></a><a href="https://sagecell.sagemath.org/" target="_blank" rel="noopener noreferrer"><b>SageMath</b><span>数式処理や数値演算をPythonで試す。</span><i>公式サイト ↗</i></a><a href="https://www.wolframalpha.com/" target="_blank" rel="noopener noreferrer"><b>WolframAlpha</b><span>巨大な整数や素因数分解を計算する。</span><i>公式サイト ↗</i></a></div></article>
+      <article class="tool-category"><div class="tool-category-top"><span class="tool-category-number">04</span><h3>Rev / Pwn</h3><span class="tool-category-label">UNDERSTAND</span></div><div class="tool-list"><a href="https://ghidra-sre.org/" target="_blank" rel="noopener noreferrer"><b>Ghidra</b><span>バイナリをC言語風の疑似コードにして構造を読む。</span><i>公式サイト ↗</i></a><a href="https://hex-rays.com/ida-free/" target="_blank" rel="noopener noreferrer"><b>IDA Free</b><span>実行ファイルを逆アセンブルして観察する。</span><i>公式サイト ↗</i></a><a href="https://github.com/hugsy/gef" target="_blank" rel="noopener noreferrer"><b>GDB + GEF</b><span>レジスタ、メモリ、スタックを見ながら動きを追う。</span><i>GitHub ↗</i></a><a href="https://dogbolt.org/" target="_blank" rel="noopener noreferrer"><b>dogbolt</b><span>複数のデコンパイラの結果を比べる。</span><i>サイト ↗</i></a></div></article>
+      <article class="tool-category"><div class="tool-category-top"><span class="tool-category-number">05</span><h3>Forensics</h3><span class="tool-category-label">FIND CLUES</span></div><div class="tool-list"><a href="https://www.aperisolve.com/" target="_blank" rel="noopener noreferrer"><b>Aperi'Solve</b><span>画像解析やステガノグラフィー調査をまとめて行う。</span><i>サイト ↗</i></a><a href="https://www.autopsy.com/" target="_blank" rel="noopener noreferrer"><b>Autopsy</b><span>ディスクイメージを調べ、ファイルの痕跡を探す。</span><i>公式サイト ↗</i></a><a href="https://fotoforensics.com/" target="_blank" rel="noopener noreferrer"><b>FotoForensics</b><span>画像の特徴や加工の手がかりを分析する。</span><i>サイト ↗</i></a></div></article>
+      <article class="tool-category"><div class="tool-category-top"><span class="tool-category-number">06</span><h3>Network / Misc</h3><span class="tool-category-label">LOOK AROUND</span></div><div class="tool-list"><a href="https://dnsdumpster.com/" target="_blank" rel="noopener noreferrer"><b>DNSDumpster</b><span>許可された範囲のホスト情報を可視化する。</span><i>サイト ↗</i></a><a href="https://www.virustotal.com/" target="_blank" rel="noopener noreferrer"><b>VirusTotal</b><span>ファイルやIPなどの公開情報を調べる。</span><i>サイト ↗</i></a><a href="https://gtfobins.github.io/" target="_blank" rel="noopener noreferrer"><b>GTFOBins</b><span>Linuxコマンドの意外な使い方を学ぶリファレンス。</span><i>サイト ↗</i></a><a href="https://godbolt.org/" target="_blank" rel="noopener noreferrer"><b>Compiler Explorer</b><span>C / C++がどんなアセンブリになるか確認する。</span><i>サイト ↗</i></a></div></article>
+    </div>
+  </section>
+
+  <section class="linux-section" id="linux"><div class="section-shell linux-inner"><div class="linux-copy"><div class="section-kicker"><span>02</span><p>LINUX BASICS</p></div><p class="eyebrow">なぜLinuxを学ぶの？</p><h2>コンピュータの中身を、<br /><em>自分の目で見る。</em></h2><p>サーバーの多くはLinuxで動いていて、セキュリティの基本ツールや仕組みもLinuxを前提に作られています。Linuxの操作を覚えると、ファイルやプロセス、ネットワークがどう動いているかを理解しやすくなります。</p><p>最初は黒い画面に慣れなくても大丈夫。コマンドは、コンピュータへのお願いを短い言葉で伝える方法です。</p><a class="inline-link" href="#commands">コマンド早見表を見る →</a></div><div class="linux-terminal"><div class="terminal-top"><span></span><span></span><span></span><b>learn_linux.sh</b></div><div class="terminal-line"><i>$</i> pwd <em>/home/learner</em></div><div class="terminal-line"><i>$</i> ls <em>clues  notes  tools</em></div><div class="terminal-line"><i>$</i> cat note.txt <em>keep looking.</em></div><div class="terminal-line"><i>$</i> file image.png <em>PNG image data</em></div></div></div></section>
+
+  <section class="command-section section-shell" id="commands"><div class="section-heading split-heading"><div><p class="eyebrow">Linuxコマンド早見表</p><h2>Linuxコマンド<br /><em>早見表</em></h2></div><p>コマンドは実際に入力して試すと身につきます。分からないときは `man コマンド名` で説明書を開けます。</p></div><div class="command-groups"><div class="command-group command-stage command-stage-first"><div class="command-stage-head"><span>STEP 01</span><h3>まずはこの3つだけでOK</h3></div><p class="command-stage-lead">ファイルを見る・場所を移動する・中身を読む。最初はこの3つから始めます。</p><div class="command-table"><div><code>ls</code><span>ファイルとディレクトリを一覧表示</span></div><div><code>cd &lt;dir&gt;</code><span>作業する場所を変更</span></div><div><code>cat &lt;file&gt;</code><span>ファイルの中身を表示</span></div></div></div><div class="command-group command-stage"><div class="command-stage-head"><span>STEP 02</span><h3>CTFでよく使う</h3></div><p class="command-stage-lead">手がかりを探したり、ファイルの正体を確かめたりします。</p><div class="command-table"><div><code>grep</code><span>ファイルの中から文字を検索</span></div><div><code>find</code><span>条件に合うファイルを探す</span></div><div><code>file</code><span>ファイルの種類を判別</span></div><div><code>strings</code><span>読める文字列を取り出す</span></div></div></div><div class="command-group command-stage"><div class="command-stage-head"><span>STEP 03</span><h3>慣れてきたら</h3></div><p class="command-stage-lead">ネットワークや権限を扱うときに少しずつ覚えます。</p><div class="command-table"><div><code>ssh</code><span>許可されたサーバーへ接続</span></div><div><code>nc</code><span>許可されたホストと通信を確認</span></div><div><code>wget</code><span>URLからファイルを取得</span></div><div><code>chmod</code><span>ファイルの権限を変更</span></div></div></div></div></section>
+
+  <section class="guide-next section-shell"><div class="guide-next-card"><div><p class="eyebrow">NEXT STEP</p><h2>使用ツールを知ったら、<br /><em>1問だけ解いてみよう。</em></h2><p>調べる、試す、少し分かる。その繰り返しがCTFの楽しさです。</p></div><a class="button button-gold button-large" href="/challenge.html">問題に挑戦する <span aria-hidden="true">→</span></a></div></section>
+</main>
+<footer class="site-footer"><div class="section-shell footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 27 7v8c0 7.1-4.6 11.7-11 14-6.4-2.3-11-6.9-11-14V7l11-4Z" stroke="currentColor" stroke-width="2"/><path d="m10.5 15.7 3.4 3.4 7.6-7.7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-copy"><strong>SECURE STEPS</strong><small>見て、知って、解いてみる。</small></span></a><div class="footer-links"><div><p>LEARN</p><a href="/beginner.html">学習ロードマップ</a><a href="/ctf.html">はじめてのCTF</a><a href="/challenge.html" data-open-challenge="1">問題に挑戦</a></div></div></div><div class="section-shell footer-bottom"><p>© 2026 SECURE STEPS. Educational demo — no personal data collected.</p><a href="#top">ページ上部へ ↑</a></div></footer>
+<script type="module" src="/scripts/site-nav.js"></script>
+</body>
+</html>

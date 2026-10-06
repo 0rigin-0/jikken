@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Static educational website. A sitemap URL should be added after the production domain is configured.
